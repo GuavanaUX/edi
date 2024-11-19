@@ -6,10 +6,13 @@
         <field name="name">res.company.voxel.form</field>
         <field name="model">res.company</field>
         <field name="inherit_id" ref="base.view_company_form" />
-        <field name="groups_id" eval="[(4, ref('group_voxel_manager'))]" />
         <field name="arch" type="xml">
             <notebook position="inside">
-                <page name="voxel" string="Voxel">
+                <page
+                    name="voxel"
+                    string="Voxel"
+                    groups="edi_voxel_oca.group_voxel_manager"
+                >
                     <group name="voxel_enabled">
                         <field name="voxel_enabled" />
                     </group>

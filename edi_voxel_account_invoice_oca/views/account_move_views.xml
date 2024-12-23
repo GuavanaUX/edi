@@ -42,6 +42,7 @@
                                     options="{'reload_on_button': true}"
                                     nolabel="1"
                                     readonly="1"
+                                    colspan="2"
                                 >
                                     <tree>
                                         <field name="date_created" />
